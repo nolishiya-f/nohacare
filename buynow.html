@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+
+        <!-- favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <link rel="manifest" href="site.webmanifest">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <header>
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <div class="logo">
+                <img src="images/logo.jpg" alt="Logo">
+            </div>
+            <div class="contact-info">
+                <img src="images/call_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt=""><span>+94 77 123 4567</span>
+                <img src="images/call_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt=""><span>+94 71 765 4321</span>
+            </div>
+        </div>
+    
+        <!-- Main Navigation Bar -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="doctors.html">Doctors</a></li>
+                <li><a href="consulting-reservation.html">Consulting Reservation</a></li>
+                <li><a href="pharmacy.html">Pharmacy</a></li>
+                <li><a href="healthy-tips.html">Healthy Tips</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Buy Now Form Section -->
+        <section class="buy-now-section">
+            <h1>Buy Medicine</h1>
+            <form action="submit-order.php" method="POST" class="buy-now-form">
+                <!-- Name -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <!-- Email Address -->
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <!-- Phone Number -->
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <!-- Personal Address -->
+                <label for="address">Personal Address:</label>
+                <textarea id="address" name="address" rows="4" required></textarea>
+
+                <!-- Medicine -->
+                <label for="medicine">Select Medicine:</label>
+                <select id="medicine" name="medicine" required>
+                    <option value="" disabled selected>Select a medicine</option>
+                    <option value="medicine1">panadol</option>
+                    <option value="medicine2">Zoloft</option>
+                    <option value="medicine3">Tylenol</option>
+                    <option value="medicine4">Prozac</option>
+                    <option value="medicine5">Metformin</option>
+                    <option value="medicine6">Lipitor</option>
+                    <option value="medicine7">asprin</option>
+                    <option value="medicine8">Amoxicillin</option>
+                    <option value="medicine9">Advil</option>
+                    <!-- Add more medicines as needed -->
+                </select>
+
+                <!-- Quantity -->
+                <label for="quantity">Select Quantity:</label>
+                <select id="quantity" name="quantity" required>
+                    <option value="" disabled selected>Select quantity</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+
+                <!-- Payment Method -->
+                <label for="payment-method">Select Payment Method:</label>
+                <select id="payment-method" name="payment-method" required>
+                    <option value="" disabled selected>Select payment method</option>
+                    <option value="credit-card">Credit Card</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="bank-transfer">Bank Transfer</option>
+                </select>
+
+                <!-- Branch -->
+                <label for="branch">Select Branch:</label>
+                <select id="branch" name="branch" required>
+                    <option value="" disabled selected>Select branch</option>
+                    <option value="branch1">Branch 1</option>
+                    <option value="branch2">Branch 2</option>
+                    <!-- Add more branches as needed -->
+                </select>
+
+                <!-- Submit Button -->
+                <button type="submit">Submit Order</button>
+                <button type="reset" class="reset">Reset</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>123 Noahcare St, Colombo, Sri Lanka</p>
+                <p>Phone: +94 77 123 4567</p>
+                <p>Email: info@noahcarehospital.lk</p>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+        <p>&copy; 2024 Noahcare Hospital. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

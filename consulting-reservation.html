@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="styles.css">
+    <title>Hospital - Consulting Reservation</title>
+
+        <!-- favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <link rel="manifest" href="site.webmanifest">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+   
+</head>
+<body>
+    <header>
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <div class="logo">
+                <img src="images/logo.webp" alt="Logo">
+            </div>
+            <div class="contact-info">
+                <img src="images/phone.webp" alt=""><span>+94 77 123 4567</span>
+                <img src="images/phone.webp" alt=""><span>+94 71 765 4321</span>
+            </div>
+        </div>
+    
+        <!-- Main Navigation Bar -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="doctors.html">Doctors</a></li>
+                <li><a href="consulting-reservation.html">Consulting Reservation</a></li>
+                <li><a href="pharmacy.html">Pharmacy</a></li>
+                <li><a href="healthy-tips.html">Healthy Tips</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Heading -->
+        <section class="reservation-section">
+            <h1>Consulting and Reservation</h1>
+            <form action="path/to/submit-form" method="POST" class="reservation-form">
+                <!-- Name -->
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <!-- Email -->
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <!-- Phone Number -->
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <!-- Personal Address -->
+                <label for="address">Personal Address:</label>
+                <textarea id="address" name="address" rows="3" required></textarea>
+
+                <!-- Select Doctor -->
+                <label for="doctor">Select Doctor:</label>
+                <select id="doctor" name="doctor" required>
+                    <option value="" disabled selected>Select a doctor</option>
+                    <option value="doctor1">Dr. John Doe - Cardiologist</option>
+                    <option value="doctor2">Dr. Jane Smith - Neurologist</option>
+                    <option value="doctor3">Dr. Mark Lee - Pediatrician</option>
+                    <option value="doctor4">Dr. Sarah Brown - Orthopedist</option>
+                    <option value="doctor4">Dr. Emily Davis - Dermatologist</option>
+                    <option value="doctor4">Dr. Michael Johnson - Emergency Care</option>
+                    <option value="doctor4">Dr. Lisa White - Cardiologist</option>
+                    <option value="doctor2">Dr. David Green - Neurologist</option>
+                    <option value="doctor3">Dr. Olivia Black - Pediatrician</option>
+                    <!-- Add more doctors as needed -->
+                </select>
+
+            <!-- Select Branch -->
+<!--                 <label for="branch">Select Branch:</label>
+                <select id="branch" name="branch" required>
+                    <option value="" disabled selected>Select a branch</option>
+                    <option value="branch1">Noahcare Hospital - Colombo</option>
+                    <option value="branch2">Noahcare Hospital - Kandy</option>
+                    <option value="branch3">Noahcare Hospital - Galle</option>
+                </select> --> 
+
+                <!-- Select Date -->
+                <label for="date">Select Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <!-- Select Time -->
+                <label for="time">Select Time:</label>
+                <input type="time" id="time" name="time" required>
+
+                <!-- Submit Button -->
+                <button type="submit">Reserve Appointment</button>
+                <button type="reset" class="reset">Reset</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>123 Noahcare St, Colombo, Sri Lanka</p>
+                <p>Phone: +94 77 123 4567</p>
+                <p>Email: info@noahcarehospital.lk</p>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+        <p>&copy; 2024 Noahcare Hospital. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+
+        <!-- favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <link rel="manifest" href="site.webmanifest">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <header>
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <div class="logo">
+                <img src="images/logo.webp" alt="Logo">
+            </div>
+            <div class="contact-info">
+                <img src="images/phone.webp" alt=""><span>+94 77 123 4567</span>
+                <img src="images/phone.webp" alt=""><span>+94 71 765 4321</span>
+            </div>
+        </div>
+    
+        <!-- Main Navigation Bar -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="doctors.html">Doctors</a></li>
+                <li><a href="consulting-reservation.html">Consulting Reservation</a></li>
+                <li><a href="pharmacy.html">Pharmacy</a></li>
+                <li><a href="healthy-tips.html">Healthy Tips</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Patient Registration Form Section -->
+        <section class="patient-registration-section">
+            <h1>Patient Registration</h1>
+            <form action="submit-registration.php" method="POST" class="registration-form">
+                <!-- Name -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <!-- Email Address -->
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <!-- Phone Number -->
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <!-- Services -->
+                <label for="services">Select Service:</label>
+                <select id="services" name="services" required>
+                    <option value="" disabled selected>Select a service</option>
+                    <option value="service1">Emergency Care</option>
+                    <option value="service2">Dermatology</option>
+                    <option value="service3">Orthopedics</option>
+                    <option value="service4">Pediatrics</option>
+                    <option value="service5">Neurology</option>
+                    <option value="service6">Cardiology</option>
+                   
+                </select>
+
+                <!-- Date -->
+                <label for="date">Select Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <!-- Time -->
+                <label for="time">Select Time:</label>
+                <input type="time" id="time" name="time" required>
+
+                <!-- Submit Button -->
+                <button type="submit">Register</button>
+                <button type="reset" class="reset">Reset</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>123 Noahcare St, Colombo, Sri Lanka</p>
+                <p>Phone: +94 77 123 4567</p>
+                <p>Email: info@noahcarehospital.lk</p>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+        <p>&copy; 2024 Noahcare Hospital. All Rights Reserved.</p>
+    </footer>
+    
+</body>
+</html>
